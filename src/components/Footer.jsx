@@ -4,48 +4,48 @@ import { LuGlobe2 } from "react-icons/lu";
 import axios from 'axios';
 
 const Footer = () => {
-    const [location, setLocation] = useState("Roorkee, India");
-    const [dateTime, setDateTime] = useState("");
-    const [temperature, setTemperature] = useState("");
-    const [aqi, setAqi] = useState("");
-
-    useEffect(() => {
-        const fetchWeatherData = async () => {
-            try {
-                const apiKey = process.env.REACT_APP_OPENWEATHERMAP_API_KEY;
-                const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Roorkee,in&units=metric&appid=${apiKey}`);
+    // const [location, setLocation] = useState("Roorkee, India");
+    // const [dateTime, setDateTime] = useState("");
+    // const [temperature, setTemperature] = useState("");
+    // const [aqi, setAqi] = useState("");
+    // 
+    // useEffect(() => {
+    //     const fetchWeatherData = async () => {
+    //         try {
+    //             const apiKey = process.env.REACT_APP_OPENWEATHERMAP_API_KEY;
+    //             const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Roorkee,in&units=metric&appid=${apiKey}`);
                 
-                const { temp } = response.data.main;
-                setTemperature(`Temp: ${temp}°C`);
+    //             const { temp } = response.data.main;
+    //             setTemperature(`Temp: ${temp}°C`);
 
-                const { lon, lat } = response.data.coord;
-                const aqiResponse = await axios.get(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}`);
+    //             const { lon, lat } = response.data.coord;
+    //             const aqiResponse = await axios.get(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}`);
                 
-                const { aqi } = aqiResponse.data.list[0].main;
-                setAqi(`AQI: ${aqi}`);
+    //             const { aqi } = aqiResponse.data.list[0].main;
+    //             setAqi(`AQI: ${aqi}`);
 
-                const timezoneOffset = response.data.timezone; // Timezone offset in seconds
-                const currentDate = new Date();
-                const utcDate = new Date(currentDate.getTime() + currentDate.getTimezoneOffset() * 60000);
-                const localDate = new Date(utcDate.getTime() + timezoneOffset * 1000);
+    //             const timezoneOffset = response.data.timezone; // Timezone offset in seconds
+    //             const currentDate = new Date();
+    //             const utcDate = new Date(currentDate.getTime() + currentDate.getTimezoneOffset() * 60000);
+    //             const localDate = new Date(utcDate.getTime() + timezoneOffset * 1000);
 
-                const formattedDate = localDate.toLocaleString('en-IN', {
-                    weekday: 'long',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    day: 'numeric',
-                    month: 'long',
-                    year: 'numeric'
-                });
+    //             const formattedDate = localDate.toLocaleString('en-IN', {
+    //                 weekday: 'long',
+    //                 hour: '2-digit',
+    //                 minute: '2-digit',
+    //                 day: 'numeric',
+    //                 month: 'long',
+    //                 year: 'numeric'
+    //             });
                 
-                setDateTime(formattedDate);
-            } catch (error) {
-                console.error("Error fetching weather data:", error);
-            }
-        };
+    //             setDateTime(formattedDate);
+    //         } catch (error) {
+    //             console.error("Error fetching weather data:", error);
+    //         }
+    //     };
 
-        fetchWeatherData();
-    }, []);
+    //     fetchWeatherData();
+    // }, []);
 
     return (
         <div className='w-full flex py-16 bg-black text-white'>
@@ -88,9 +88,12 @@ const Footer = () => {
                 <div className="flex flex-col w-fit">
                     <h1 className="text-xl font-poppins">Roorkee</h1>
                     <hr className="border-t-2 w-20 mb-3 border-white" />
-                    <p className="text-gray-500 mb-1 font-poppins">{dateTime}</p>
+                    {/* <p className="text-gray-500 mb-1 font-poppins">{dateTime}</p>
                     <p className="text-gray-500 mb-1 font-poppins">{temperature}</p>
-                    <p className="text-gray-500 mb-1 font-poppins">{aqi}</p>
+                    <p className="text-gray-500 mb-1 font-poppins">{aqi}</p> */}
+                    <p className="text-gray-500 mb-1 font-poppins">Monday, 12th March, 2024, 18:00</p>
+                    <p className="text-gray-500 mb-1 font-poppins">Temp: 38.2°C</p>
+                    <p className="text-gray-500 mb-1 font-poppins">AQI: 6</p>
                 </div>
                 <div className="flex flex-col w-full">
                     <h1 className="text-xl font-poppins">Find us here</h1>
