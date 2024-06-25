@@ -49,7 +49,7 @@ const Footer = () => {
 
     return (
         <div className='w-full flex py-16 bg-black text-white'>
-            <div className="flex flex-col w-[35%] items-center gap-8 justify-center">
+            <div className="flex flex-col w-[35%] items-center gap-8 justify-center pb-16">
                 <img src="/images/iitr_logo.svg" className='w-24 h-24' alt="IITR" />
                 <div className="flex flex-col gap-1">
                     <h1 className="font-poppins text-lg">Indian Institute of Technology Roorkee</h1>
