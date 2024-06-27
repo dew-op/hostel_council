@@ -56,7 +56,7 @@ const Members = () => {
                     <img src="/images/black_line.svg" className="h-5 m-auto" alt="members-logo" />
                 </div>
                 <p className="font-lato text-xl mr-auto">
-                    Meet Your Student Council Representatives, General Secretaries.
+                    Meet Your Student Council Representatives, General Secretaries  .
                 </p>
             </div>
             <div className="flex flex-wrap justify-center w-full items-center gap-x-8 gap-y-10">
