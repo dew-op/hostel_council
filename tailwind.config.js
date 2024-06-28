@@ -7,7 +7,7 @@ module.exports = {
         lato: ['Lato', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
-      },
+      }
     },
   },
   plugins: [],
