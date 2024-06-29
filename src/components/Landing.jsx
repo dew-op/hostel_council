@@ -73,7 +73,7 @@ const NavBar = () => {
 const Landing = () => {
     return (
         <section>
-            <div className="relative flex flex-col flex-wrap justify-between bg-header-img">
+            <div className="relative flex flex-col flex-wrap min-h-screen justify-between bg-header-img">
 
                 <NavBar />
 
@@ -82,8 +82,8 @@ const Landing = () => {
                     <div className="pt-5">IIT ROORKEE</div>
                 </div>
 
-                <div className="hidden lg:flex lg:justify-center md:flex-wrap text-white font-medium z-10 font-montserrat py-10">
-                    A student-led, active organization that engages with, empowers, and represents the diverse student population of IIT Roorkee.
+                <div className="hidden lg:flex lg:justify-center md:flex-wrap text-white text-lg font-medium z-10 font-poppins py-10 leading-8">
+                    A student-led, active organization that engages with, empowers, and represents<br/>the diverse student population of IIT Roorkee.
                 </div>
 
             </div>
