@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 import { Navigation, EffectCoverflow } from 'swiper/modules';
-
+import { Link } from 'react-router-dom';
 const images = [
     { src: 'images/image5.svg', alt: 'Image 5' },
     { src: 'images/image3.svg', alt: 'Image 3' },
@@ -25,7 +25,7 @@ const images = [
 
 const ImageSlider = () => {
     return (
-        <div className="w-full h-full px-5 text-white bg-black py-14 sm:px-7 lg:px-20 sm:py-20 ">
+        <div className="w-full h-full px-5 py-12 text-white bg-black lg:py-16 sm:px-7 sm:py-14 lg:px-20 ">
             <header className="flex flex-col items-center justify-between mb-8 lg:flex-row">
                 <div className="flex flex-col items-center w-full gap-4 sm:flex-row">
                     <img src="/images/gallery.svg" className="h-10 " alt="gallery-logo" />
@@ -74,6 +74,13 @@ const ImageSlider = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <div className="mt-6 text-left">
+                <Link to="/all-photos">
+                    <button className="text-xl text-white font-lato ">
+                        See all
+                    </button>
+                </Link>
+            </div>
             <style jsx>{`
                 .swiper-slide {
                     transition: transform 0.3s, filter 0.3s;
