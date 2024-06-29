@@ -66,18 +66,18 @@ const cards = [
 
 const Members = () => {
     return (
-        <div className='min-h-screen w-full px-20 py-20 bg-white flex flex-col justify-center gap-10 items-center'>
+        <div className='min-h-screen w-full px-8 lg:px-20 py-20 bg-white flex flex-col justify-center gap-6 lg:gap-10 items-center'>
             <div className="flex flex-col gap-4 w-full">
                 <div className="flex gap-4 text-left mr-auto">
-                    <img src="/images/members.svg" className="h-10 m-auto" alt="members-logo" />
-                    <h1 className="font-lato font-extrabold text-4xl">Members</h1>
-                    <img src="/images/black_line.svg" className="h-5 m-auto" alt="members-logo" />
+                    <img src="/images/members.svg" className="h-7 lg:h-10 m-auto" alt="members-logo" />
+                    <h1 className="font-lato font-extrabold text-3xl lg:text-4xl">Members</h1>
+                    <img src="/images/black_line.svg" className="h-2 lg:h-5 m-auto" alt="members-logo" />
                 </div>
-                <p className="font-lato text-xl mr-auto">
+                <p className="font-lato text-md text-left lg:text-xl mr-auto">
                     Meet Your Student Council Representatives, General Secretaries  .
                 </p>
             </div>
-            <div className="flex flex-wrap justify-center w-full mt-4 gap-4 md:gap-8 lg:gap-10">
+            <div className="flex flex-wrap justify-center w-full mt-4 px-8 lg:px-0 gap-4 md:gap-8 lg:gap-10">
               {cards.map(({ name, img, position, org }, index) => (
                 <Card
                   key={index}
