@@ -3,3 +3,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .bg-header-img {
+        background-color: black; 
+    }
+
+    @media (min-width: 768px) {
+        .bg-header-img {
+            background-image: url('../public/images/header_img.png');
+            background-size: cover;
+            background-position: center;
+            position: relative; 
+        }
+
+        .bg-header-img::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.35);
+        }
+    }
+}
