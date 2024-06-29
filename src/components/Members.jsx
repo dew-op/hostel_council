@@ -6,43 +6,61 @@ const cards = [
         name: 'Aditya Sindhu',
         img: '/images/img1.svg',
         position: 'General Secretary',
-        org: 'Hostel Council',
+        org: 'Hostel Affairs',
     },
     {
-        name: 'Aditya Sindhu',
-        img: '/images/img1.svg',
-        position: 'General Secretary',
-        org: 'Hostel Council',
+        name: 'Gaurav Kumar',
+        img: '/images/img2.svg',
+        position: 'Deputy General Secretary - PG Boys',
+        org: 'Hostel Affairs',
     },
     {
-        name: 'Aditya Sindhu',
-        img: '/images/img1.svg',
-        position: 'General Secretary',
-        org: 'Hostel Council',
+        name: 'Nitish Kumar',
+        img: '/images/img3.svg',
+        position: 'Deputy General Secretary - UG Boys',
+        org: 'Hostel Affairs',
     },
     {
-        name: 'Aditya Sindhu',
-        img: '/images/img1.svg',
-        position: 'General Secretary',
-        org: 'Hostel Council',
+        name: 'Anet Maria P',
+        img: '/images/img4.svg',
+        position: 'Deputy General Secretary - Girls',
+        org: 'Hostel Affairs',
     },
     {
-        name: 'Aditya Sindhu',
-        img: '/images/img1.svg',
-        position: 'General Secretary',
-        org: 'Hostel Council',
+        name: 'Ankur Singh',
+        img: '/images/img5.svg',
+        position: 'General Secretary - PG',
+        org: 'Academic Affairs',
     },
     {
-        name: 'Aditya Sindhu',
-        img: '/images/img1.svg',
-        position: 'General Secretary',
-        org: 'Hostel Council',
+        name: 'Sanchit Chaba',
+        img: '/images/img6.svg',
+        position: 'General Secretary - UG',
+        org: 'Academic Affairs',
     },
     {
-        name: 'Aditya Sindhu',
-        img: '/images/img1.svg',
+        name: 'Sankalp Raj',
+        img: '/images/img7.svg',
         position: 'General Secretary',
-        org: 'Hostel Council',
+        org: 'Technical Affairs',
+    },
+    {
+        name: 'Ankit Dhaka',
+        img: '/images/img8.svg',
+        position: 'General Secretary',
+        org: 'Sports Affairs',
+    },
+    {
+        name: 'Mayank Chauhan',
+        img: '/images/img9.svg',
+        position: 'General Secretary',
+        org: 'Cultural Affairs',
+    },
+    {
+        name: 'Ishaan Jain',
+        img: '/images/img10.svg',
+        position: 'General Secretary',
+        org: 'Entrepreneurship Affairs',
     },
 ];
 
@@ -59,16 +77,16 @@ const Members = () => {
                     Meet Your Student Council Representatives, General Secretaries  .
                 </p>
             </div>
-            <div className="flex flex-wrap justify-center w-full items-center gap-x-8 gap-y-10">
-                {cards.map(({ name, img, position, org }, index) => (
-                    <Card
-                        key={index}
-                        name={name}
-                        img={img}
-                        position={position}
-                        org={org}
-                    />
-                ))}
+            <div className="flex flex-wrap justify-center w-full mt-4 gap-4 md:gap-8 lg:gap-10">
+              {cards.map(({ name, img, position, org }, index) => (
+                <Card
+                  key={index}
+                  name={name}
+                  img={img}
+                  position={position}
+                  org={org}
+                />
+              ))}
             </div>
         </div>
     );
