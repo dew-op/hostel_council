@@ -57,18 +57,23 @@ const Noticeboard = () => {
     };
     return (
         <div className="flex flex-col w-full min-h-screen gap-10 px-5 py-10 bg-white border-t border-b sm:px-7 lg:px-20">
-            <div className="max-w-full lg:max-w-11/12">
+            <div className="max-w-full lg:max-w-11/12 p-4">
                 <header className="flex flex-col items-center justify-between mb-6 sm:flex-row">
-                    <div className="flex flex-col items-center w-full gap-4 sm:flex-row">
+                    {/* <div className="flex flex-col items-center w-full gap-4 sm:flex-row">
                         <img src="/images/noticeboard.svg" className="h-10" alt="members-logo" />
                         <div className="flex items-center w-full">
                             <h1 className="text-2xl font-extrabold font-lato lg:text-4xl">Sac Noticeboard</h1>
                             <img src="/images/black_line.svg" className="h-5 ml-4" alt="black-line" />
                         </div>
+                    </div> */}
+                    <div className="flex gap-4 text-left mr-auto">                    
+                        <img src="/images/noticeboard.svg" className="h-7 lg:h-10 m-auto" alt="members-logo" />
+                        <h1 className="font-lato font-extrabold text-[1.7rem] lg:text-4xl">SAC Noticeboard</h1>
+                        <img src="/images/black_line.svg" className="h-2 lg:h-5 m-auto" alt="white-line" />
                     </div>
                 </header>
 
-                <p className="text-lg text-left font-lato lg:text-xl">
+                <p className="font-lato text-md text-left lg:text-xl mr-auto">
                     Your One-Stop Hub for Student Council Updates and Announcements!
                 </p>
                 <div className="grid w-full grid-cols-1 mx-auto gap-y-12 md:gap-12 sm:gap-x-5 sm:gap-y-7 lg:gap-x-20 lg:gap-y-14 mt-11 sm:grid-cols-2 lg:w-11/12 xl:grid-cols-3">

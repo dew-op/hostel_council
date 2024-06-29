@@ -25,17 +25,15 @@ const images = [
 
 const ImageSlider = () => {
     return (
-        <div className="w-full h-full px-5 py-12 text-white bg-black lg:py-16 sm:px-7 sm:py-14 lg:px-20 ">
+        <div className="w-full h-full px-6 py-16 text-white bg-black lg:py-16 sm:px-7 sm:py-14 lg:px-20">
             <header className="flex flex-col items-center justify-between mb-8 lg:flex-row">
-                <div className="flex flex-col items-center w-full gap-4 sm:flex-row">
-                    <img src="/images/gallery.svg" className="h-10 " alt="gallery-logo" />
-                    <div className="flex items-center w-full">
-                        <h1 className="text-2xl font-extrabold font-lato md:text-3xl lg:text-4xl">Gallery</h1>
-                        <img src="/images/whiteline.svg" className="h-5 ml-4 text-white" alt="white-line" />
-                    </div>
+                <div className="flex gap-4 text-left mr-auto">                    
+                    <img src="/images/gallery.svg" className="h-7 lg:h-10 m-auto" alt="members-logo" />
+                    <h1 className="font-lato font-extrabold text-3xl lg:text-4xl">Gallery</h1>
+                    <img src="/images/whiteline.svg" className="h-2 lg:h-5 m-auto" alt="white-line" />
                 </div>
             </header>
-            <p className="mb-12 text-lg text-left font-lato md:text-xl">
+            <p className="font-lato text-md text-left lg:text-xl mr-auto mb-6">
                 Discover Beauty in Every Corner. Here's our College Campus Through a Serene lens.
             </p>
             <Swiper
