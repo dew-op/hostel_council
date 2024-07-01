@@ -48,7 +48,7 @@ const Footer = () => {
     }, []);
 
     return (
-        <div className='w-full flex flex-wrap py-16 bg-black text-white'>
+        <div id="Contact us" className='w-full flex flex-wrap py-16 bg-black text-white'>
             <div className="flex flex-col w-full lg:w-[35%] items-center gap-8 justify-center pb-16">
                 <img src="/images/iitr_logo.svg" className='w-24 h-24' alt="IITR" />
                 <div className="flex flex-col gap-1">
