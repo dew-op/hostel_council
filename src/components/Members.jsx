@@ -66,7 +66,7 @@ const cards = [
 
 const Members = () => {
     return (
-        <div className='min-h-screen w-full px-8 lg:px-20 py-20 bg-white flex flex-col justify-center gap-6 lg:gap-10 items-center'>
+        <div id="Members" className='min-h-screen w-full px-8 lg:px-20 py-20 bg-white flex flex-col justify-center gap-6 lg:gap-10 items-center'>
             <div className="flex flex-col gap-4 w-full">
                 <div className="flex gap-4 text-left mr-auto">
                     <img src="/images/members.svg" className="h-7 lg:h-10 m-auto" alt="members-logo" />
