@@ -56,7 +56,7 @@ const Noticeboard = () => {
         setVisibleNotices(3);
     };
     return (
-        <div className="flex flex-col w-full min-h-screen gap-10 px-5 py-10 bg-white border-t border-b sm:px-7 lg:px-20">
+        <div id="Noticeboard" className="flex flex-col w-full min-h-screen gap-10 px-5 py-10 bg-white border-t border-b sm:px-7 lg:px-20">
             <div className="max-w-full lg:max-w-11/12 p-4">
                 <header className="flex flex-col items-center justify-between mb-6 sm:flex-row">
                     {/* <div className="flex flex-col items-center w-full gap-4 sm:flex-row">

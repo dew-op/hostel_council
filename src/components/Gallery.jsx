@@ -25,7 +25,7 @@ const images = [
 
 const ImageSlider = () => {
     return (
-        <div className="w-full h-full px-6 py-16 text-white bg-black lg:py-16 sm:px-7 sm:py-14 lg:px-20">
+        <div id="Gallery" className="w-full h-full px-6 py-16 text-white bg-black lg:py-16 sm:px-7 sm:py-14 lg:px-20">
             <header className="flex flex-col items-center justify-between mb-8 lg:flex-row">
                 <div className="flex gap-4 text-left mr-auto">                    
                     <img src="/images/gallery.svg" className="h-7 lg:h-10 m-auto" alt="members-logo" />
